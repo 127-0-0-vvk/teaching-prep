@@ -15,12 +15,19 @@
 2)Tools in Azure DevOps: Azure DevOps provides a suite of tools to support the DevOps process:
 
 Azure Repos: For version control and code repositories.
+
 Azure Pipelines: For continuous integration and continuous delivery (CI/CD) pipelines.
+
 Azure Boards: For planning, tracking, and managing work items and agile project management.
+
 Azure Test Plans: For test case management and test automation.
+
 Popular Alternatives to Azure DevOps Boards:
 
 3)Jira: A widely-used tool for issue tracking, project management, and agile planning.
+
 Trello: A visual project management tool using boards, lists, and cards.
+
 Asana: A task and project management platform for teams and individuals.
+
 Monday.com: A work operating system to manage tasks, projects, and workflows.
