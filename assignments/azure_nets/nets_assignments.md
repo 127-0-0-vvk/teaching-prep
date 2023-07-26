@@ -68,44 +68,69 @@ Application Layer
 
 ### Exercises
 
-Exercise: 🚀 Creating a VM in an existing VNet and connecting to it
+### Exercise: 🚀 Creating a VM in an existing VNet and connecting to it
+
 Step 1: 🌐 Create a Virtual Network (VNet) using Azure Portal
+
 Sign in to the Azure Portal (https://portal.azure.com).
+
 🖋️ Click on "+ Create a resource" in the left-hand menu.
+
 🔍 Search for "Virtual network" in the search bar and select "Virtual network" from the results.
+
 🏁 Click "Create" on the Virtual network blade.
+
 📝 Fill in the required details for the VNet, such as Name, IP address range, and Subnet name.
+
 ✅ Click "Create" to create the VNet.
+
 Step 2: 🕸️ Create a Subnet for the existing VNet
+
 📝 Navigate to the newly created VNet in the Azure Portal.
+
 📝 In the VNet overview page, click on "Subnets" in the left-hand menu.
+
 📝 Click on "+ Subnet" to add a new subnet.
+
 📝 Provide a Name for the new subnet and set its Address range.
+
 ✅ Click "OK" to create the subnet.
+
 Step 3: 🖥️ Create a Virtual Machine (VM) in the Subnet
+
 🖋️ Click on "+ Create a resource" in the left-hand menu.
+
 🔍 Search for "Windows Server" or "Linux" depending on your preference and select the desired image from the results.
 🏁 Click "Create" on the VM blade.
+
 📝 Fill in the required details for the VM, such as Name, Region, Resource group, and Size.
+
 📝 Under the "Networking" section, select the existing VNet and Subnet created earlier.
+
 📝 Set up an Administrator account and configure any additional settings as needed.
+
 ✅ Click "Review + create" and then "Create" to deploy the VM.
+
 Step 4: 🤝 Connect to the VM using SSH (Linux) or RDP (Windows)
 For Linux VM (SSH):
+
 🔍 Once the VM is deployed, navigate to the VM's overview page in the Azure Portal.
+
 🔍 In the overview page, click on "Connect" to get the SSH command for connecting to the VM.
+
 🚀 Open a terminal on your local machine and use the provided SSH command to connect to the VM.
+
 For Windows VM (RDP):
+
 🔍 Once the VM is deployed, navigate to the VM's overview page in the Azure Portal.
+
 🔍 In the overview page, click on "Connect" to download the RDP file for connecting to the VM.
+
 🚀 Open the downloaded RDP file, enter the credentials you set up during VM creation, and connect to the VM.
+
 Congratulations! 🎉 You have now successfully created a VM in an existing VNet and connected to it using SSH (Linux) or RDP (Windows) through the Azure Portal.
 
 Note: Make sure to properly manage your Azure resources to avoid unnecessary costs. Don't forget to stop or deallocate the VM when not in use.
-
-
-
-
 
 
 
