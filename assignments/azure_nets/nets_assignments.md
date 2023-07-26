@@ -142,3 +142,75 @@ Note: Make sure to properly manage your Azure resources to avoid unnecessary cos
 | <input type="checkbox"> | 1 | Create two VNets (with non-overlapping addresses) with one VM deployed to each. Only one VM should have public IP address. |
 | <input type="checkbox"> | 2 | Setup Network Peering between two VNets. |
 | <input type="checkbox"> | 3 | Connect (SSH/RDP) to the VM with the public IP from your laptop. From it, connect to the other VM using its private IP. |
+
+
+### Answers
+
+### Exercise 🚀
+
+Step 1: Create two VNets (with non-overlapping addresses) with one VM deployed to each. Only one VM should have a public IP address.
+
+Sign in to the Azure Portal (https://portal.azure.com).
+
+🖋️ Click on "+ Create a resource" in the left-hand menu.
+
+🔍 Search for "Virtual network" in the search bar and select "Virtual network" from the results.
+
+🏁 Click "Create" on the Virtual network blade.
+
+📝 Fill in the required details for the first VNet, such as Name and IP address range (e.g., 10.0.0.0/16).
+
+✅ Click "Create" to create the first VNet.
+
+Repeat steps 2 to 6 to create the second VNet with a different IP address range (e.g., 192.168.0.0/16).
+
+🖋️ Click on "+ Create a resource" again and search for "Virtual machine" to deploy two VMs.
+
+Follow the VM creation wizard for each VNet, ensuring one VM has a public IP and the other does not.
+
+Step 2: Setup Network Peering between the two VNets.
+
+Navigate to the first VNet's overview page in the Azure Portal.
+
+📝 Click on "Peerings" in the left-hand menu.
+
+📝 Click on "+ Add" to create a new peering.
+
+📝 Choose the second VNet from the dropdown list and fill in the peering details.
+
+✅ Click "OK" to establish the peering between the VNets.
+
+Repeat steps 1 to 5 for the second VNet.
+
+Step 3: Connect (SSH/RDP) to the VM with the public IP from your laptop. From it, connect to the other VM using its private IP.
+
+For Linux VM (SSH):
+
+🔍 Once the VM with the public IP is deployed, navigate to its overview page in the Azure Portal.
+
+🔍 In the overview page, click on "Connect" to get the SSH command for connecting to the VM.
+
+🚀 Open a terminal on your local machine and use the provided SSH command to connect to the VM.
+
+📝 Once connected to the first VM, use its private IP to SSH into the second VM (e.g., ssh username@private_ip_of_second_vm).
+
+For Windows VM (RDP):
+
+🔍 Once the VM with the public IP is deployed, navigate to its overview page in the Azure Portal.
+
+🔍 In the overview page, click on "Connect" to download the RDP file for connecting to the VM.
+
+🚀 Open the downloaded RDP file, enter the credentials you set up during VM creation, and connect to the VM.
+
+📝 Once connected to the first VM, use its private IP to RDP into the second VM (e.g., Remote Desktop to private_ip_of_second_vm).
+
+Congratulations! 🎉 You have now successfully created two VNets, deployed VMs in each VNet, set up Network Peering, and connected to the VM with the public IP and then to the other VM using its private IP.
+
+
+Note: Make sure to manage your Azure resources responsibly to avoid unnecessary costs. Don't forget to stop or deallocate the VMs when not in use.
+
+
+
+
+
+
