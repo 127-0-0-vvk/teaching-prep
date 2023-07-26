@@ -66,7 +66,6 @@ Application Layer
 
 ## Virtual Networks (VNets)
 
-### Exercises
 
 ### Exercise: 🚀 Creating a VM in an existing VNet and connecting to it
 
@@ -131,9 +130,6 @@ For Windows VM (RDP):
 Congratulations! 🎉 You have now successfully created a VM in an existing VNet and connected to it using SSH (Linux) or RDP (Windows) through the Azure Portal.
 
 Note: Make sure to properly manage your Azure resources to avoid unnecessary costs. Don't forget to stop or deallocate the VM when not in use.
-
-
-
 
 
 
